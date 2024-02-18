@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.logindocpage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1699be;
+} 
+
+.wrapper
+{
+    padding-left: 2.5%;
+    position:relative;
+    width:750px;
+    height:450px;
+    background: transparent;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 25px #0ef;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.wrapper  .form-box
+{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper  .form-box .login
+{
+    left: 0;
+    padding: 0 60px 0 40px;
+}
+
+.form-box h2{
+    
+    font-size:32px;
+    color:white;
+    text-align: center;
+    left: 40%;
+}
+
+.form-box .input-box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 25px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    padding-right: 23px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    transition: .5s; 
+}
+.input-box input:focus,
+.input-box input:valid
+{
+    border-bottom-color:#0ef;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+    color: #0ef;
+
+}
+
+.input-box svg{
+    position:absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: white;
+}
+.input-box input:focus~svg,
+.input-box input:valid~svg
+{
+    color: #0ef;
+}
+
+.btn1
+{
+    position: relative;
+    left: 20%;
+    width: 60%;
+    height: 50px;
+    background: transparent;
+    background: 2px solid #0ef;
+    outline: none;
+    border-radius: 40px;
+    cursor:pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+.btn1::before
+{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background: linear-gradient(#1699be,#0ef,#1699be,#0ef);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn1:hover::before
+{
+    top: 0;
+}
+
+.wrapper .info-text
+{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper .info-text.login{
+    right:0;
+    padding:  5% 8% 30% 22%;
+}
+
+.wrapper .bg-animate
+{
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 850px;
+    height:600px;
+    background: linear-gradient(45deg, #1699be,#0ef);
+    border-bottom:3px solid #0ef;
+    transform: rotate(19deg) skewY(40deg);
+    transform-origin: bottom right;
+
+
+
+}
