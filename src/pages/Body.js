@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import heroimg from "../assets/hero_image.png"
+import logo from "../assets/logo1.png"
 import "./Body.css"
 const Body = () => {
   return (
@@ -14,7 +15,7 @@ const Body = () => {
       </div>
     </div>
 
-    <div class="container">
+    <div className="container">
       <div class="card">
         <div class="box">
           <div class="content">
@@ -47,6 +48,15 @@ const Body = () => {
           </div>
         </div>
       </div>
+    </div>
+    <div className='aboutus'>
+      
+      <div className='aboutleft'>
+        <h1>ABOUT US</h1>
+        <p> " Our cutting-edge hospital management system revolutionizes healthcare by empowering doctors to seamlessly generate digital prescriptions, ensuring accuracy and efficiency. With a meticulously maintained digital medicine store, we guarantee real-time updates on medication availability. Additionally, our platform streamlines the process by allowing users to conveniently place digital orders for medications, enhancing overall patient care and administrative efficacy. "</p>
+        <p>&#9679;&#9679;&#9679;&#9679;</p>
+      </div>
+      <div className='aboutright'><img src={logo} alt="" /></div>
     </div>
     </>
   )

@@ -19,7 +19,7 @@ body {
 
 .navbar {
   border-radius: 20px;
-  height: 60px;
+  height: 6vh;
   background-color: #A4DDED;
   position: relative;
 }
@@ -44,8 +44,8 @@ body {
 }
 
 .nav-elements ul a {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 600;
   color: #2f234f;
   text-decoration: none;
 }
@@ -61,7 +61,7 @@ body {
   position: absolute;
   bottom: -4px;
   left: 0;
-  width: 100%;
+  width: 75%;
   height: 2px;
   background-color: #574c4c;
 }

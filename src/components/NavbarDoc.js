@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import "./navbar.css"
 import logo from "../assets/logo1.png"
 
-const Navbar = () => {
+const NavbarDoc = () => {
   return (
     <div className="navbarbg">
         <nav className="navbar">
@@ -18,13 +18,10 @@ const Navbar = () => {
               <NavLink to="/home">Home</NavLink>
             </li>  
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/">Add Prescription</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
-            <li>
-              <NavLink to="/login">Login</NavLink>
+              <NavLink to="/logout">Logout</NavLink>
             </li>
           </ul>
         </div>
@@ -35,4 +32,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarDoc
