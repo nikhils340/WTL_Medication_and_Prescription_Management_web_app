@@ -59,7 +59,7 @@ import logo from "../assets/logo1.png"
 const Footer = () => {
   return (
  
-    <footer class="footer-distributed">
+    <footer class="footer-distributed" id='navtofooter'>
     
                 <div class="footer-left">
     

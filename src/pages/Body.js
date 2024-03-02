@@ -45,11 +45,11 @@ const Body = () => {
             <h3>MANAGEMENT OF MEDICAL STOCK</h3>
             <p>Digital tracking and management of medical stock, providing real-time updates on expiration dates,etc</p>
             <a href="#"> More -></a>
-          </div>
+          </div> 
         </div>
       </div>
     </div>
-    <div className='aboutus'>
+    <div className='aboutus' id='navtoaboutus'>
       
       <div className='aboutleft'>
         <h1>ABOUT US</h1>

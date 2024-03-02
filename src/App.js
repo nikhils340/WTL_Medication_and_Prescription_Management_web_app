@@ -4,8 +4,6 @@ import {Outlet,NavLink,createBrowserRouter,createRoutesFromElements,Route,Router
 import Navbar from "./components/navbar";
 import Footer from './components/Footer';
 import Body from './pages/Body';
-import Contact from './pages/Contact';
-import About from './pages/About';
 import Loginmenu from './pages/Loginmenu';
 import Logindoc from './pages/Logindoc';
 import Loginmed from './pages/Loginmed';
@@ -15,6 +13,8 @@ import { useSelector} from "react-redux";
 import Logout from "./pages/Logout";
 import NavbarDoc from './components/NavbarDoc';
 import NavbarMed from './components/NavbarMed';
+import Addnewmed from './pages/Addnewmed';
+import Addprescription from './pages/Addprescription'
 
 
 
@@ -75,12 +75,12 @@ const Router=createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Rootlayout />}>
       <Route path="home" element={<Body />}/>
-      <Route path="contact" element={<Contact />}/>
-      <Route path="about" element={<About />}/>
       <Route path="login" element={<Loginmenu />}/>
       <Route path="logindoc" element={<Logindoc />}/>
       <Route path="loginmed" element={<Loginmed />}/>
       <Route path='logout' element={<Logout />} />
+      <Route path='addnewmed' element={<Addnewmed />} />
+      <Route path='addprescription' element={<Addprescription/>}/>
 
     </Route>
   )

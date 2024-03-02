@@ -18,7 +18,7 @@ const NavbarDoc = () => {
               <NavLink to="/home">Home</NavLink>
             </li>  
             <li>
-              <NavLink to="/">Add Prescription</NavLink>
+              <NavLink to="/addprescription">Add Prescription</NavLink>
             </li>
             <li>
               <NavLink to="/logout">Logout</NavLink>

@@ -23,35 +23,35 @@ function LoginMed() {
       pass: "Invalid Password"
     };
     const handleSubmit = (event) => {
-      //Prevent page reload
+
       
       event.preventDefault();
   
       var { uname, pass } = document.forms[0];
-      // var { uname, pass } = event.target;
+
   
-      // Find user login info
+   
       const userData = LoginMedicalData.find((user) => user.username === uname.value);
   
-      // Compare user info
+
       if (userData) {
         if (userData.password !== pass.value) {
-          // Invalid password
+
           setErrorMessages({ name: "pass", message: errors.pass });
         } else {
-          // dispatch({type: "LOGIN", payload: "Medical"})
+
           dispatch(loginAsMedical(uname.value));
-          // console.log(userinfo);
+         
           setIsSubmitted(true);
           navigate("/home");
         }
       } else {
-        // Username not found
+   
         setErrorMessages({ name: "uname", message: errors.uname });
       }
     };
   
-    // Generate JSX code for error message
+
     const renderErrorMessage = (name) =>
       name === errorMessages.name && (
         <div className="error">{errorMessages.message}</div>

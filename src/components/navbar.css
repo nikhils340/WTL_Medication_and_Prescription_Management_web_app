@@ -23,7 +23,11 @@ body {
   background-color: #A4DDED;
   position: relative;
 }
-
+.logo1
+{
+  font-weight: 700;
+  color: #086b87;
+}
 .logo img{
   /* height: 100%;
   width: 100%; */
@@ -46,12 +50,12 @@ body {
 .nav-elements ul a {
   font-size: 13px;
   font-weight: 600;
-  color: #2f234f;
+  color: #086b87;
   text-decoration: none;
 }
 
 .nav-elements ul a.active {
-  color: #574c4c;
+  color: #0a82a3;
   font-weight: 500;
   position: relative;
 }
@@ -63,7 +67,7 @@ body {
   left: 0;
   width: 75%;
   height: 2px;
-  background-color: #574c4c;
+  background-color: #0a82a3;;
 }
 
 .navbarbg
